@@ -31,7 +31,7 @@ The notebooks, SQL models, pipeline definitions and source documentation remain 
 - Historical Azure implementation using local SQL Server 2022, metadata-driven Azure Data Factory, a Self-hosted Integration Runtime, ADLS Gen2, Azure Databricks, PySpark and Delta Lake.
 - The initial load covers four AdventureWorks tables with 173,106 rows; the documented Silver baseline also contains 173,106 rows.
 - The Gold model documents three dimensions and two fact tables, plus Spark SQL query-plan investigation.
-- Azure resources were removed after backup. The repository preserves implementation files and historical test evidence; the Fabric migration is planned and has not started.
+- The repository preserves implementation files and historical test evidence. Fabric migration is planned and has not started; the project backlog says historical results are not current environment validation.
 - The README records known watermark limitations and a discrepancy between one Copy activity count and its audit count.
 
 ### SureLink Short-Term Insurance Data Engineering
