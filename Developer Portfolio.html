@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#f3f3ed" />
     <meta name="author" content="Lehlogonolo Ramphisa" />
-    <meta name="description" content="Junior Data Engineer candidate in South Africa with projects in Microsoft Azure, Fabric, Azure Data Factory, Databricks, Python, PySpark, data quality and Power BI." />
+    <meta name="description" content="Junior Data Engineer candidate in South Africa with projects in Azure, Fabric, Data Factory, ADLS Gen2, Databricks, Python, PySpark and Power BI." />
     <meta name="robots" content="index, follow, max-image-preview:large" />
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="en_ZA" />
@@ -34,6 +34,9 @@
         "knowsAbout": [
           "Microsoft Azure",
           "Microsoft Fabric",
+          "Azure Data Factory",
+          "Azure Data Lake Storage Gen2",
+          "Azure Databricks",
           "Data Engineering",
           "PySpark",
           "SQL",
@@ -144,16 +147,16 @@
               <p class="section-intro">This section includes every skill listed on my resume, together with technologies demonstrated in my projects. Platform and architecture fundamentals are identified as concepts.</p>
             </div>
             <div class="skills-grid">
-              <article class="skill-card"><div class="skill-icon" aria-hidden="true">⇣</div><h3>Data engineering</h3><p>Data ingestion · Data transformation · ETL/ELT concepts · Data pipeline concepts · Data integration · Data processing · Data validation · Data quality · Metadata-driven pipelines · Batch loads · Load IDs · Run auditing</p></article>
+              <article class="skill-card"><div class="skill-icon" aria-hidden="true">⇣</div><h3>Data engineering</h3><p>Data ingestion · Data transformation · ETL/ELT concepts · Data pipeline concepts · Data integration · Data processing · Data validation · Data quality · Metadata-driven pipelines · Full and incremental loads · Load IDs · Run auditing</p></article>
               <article class="skill-card"><div class="skill-icon" aria-hidden="true">▤</div><h3>Databases &amp; data modelling</h3><p>SQL · T-SQL · Microsoft SQL Server · MySQL · Azure SQL Database · Relational database design · Query optimisation · Data extraction · Database development · Fact and dimension tables · Star schemas · Referential integrity · Reconciliation</p></article>
-              <article class="skill-card"><div class="skill-icon" aria-hidden="true">⌘</div><h3>Programming, processing &amp; APIs</h3><p>Python · Pandas · PySpark · REST APIs · API integration · Git · GitHub · Data conversion · Type conversion · Missing-value handling · Deduplication · Batch transformation</p></article>
-              <article class="skill-card"><div class="skill-icon" aria-hidden="true">⇢</div><h3>Microsoft cloud &amp; data platforms</h3><p>Microsoft Azure · Microsoft Fabric · Fabric Data Pipelines · Dataflow Gen2 · Fabric Lakehouse · OneLake · Delta Lake · Cloud data fundamentals · Data lake · Data warehouse · Lakehouse concepts</p></article>
+              <article class="skill-card"><div class="skill-icon" aria-hidden="true">⌘</div><h3>Programming, processing &amp; APIs</h3><p>Python · Pandas · PySpark · Apache Spark · Spark SQL · REST APIs · API integration · Git · GitHub · Data conversion · Type conversion · Missing-value handling · Deduplication · Batch transformation</p></article>
+              <article class="skill-card"><div class="skill-icon" aria-hidden="true">⇢</div><h3>Microsoft cloud &amp; data platforms</h3><p>Microsoft Azure · Azure Data Factory · Self-hosted Integration Runtime · Azure Data Lake Storage Gen2 · Azure Databricks · Microsoft Fabric · Fabric Data Pipelines · Dataflow Gen2 · Fabric Lakehouse · OneLake · Delta Lake · Cloud data fundamentals · Data warehouse concepts</p></article>
               <article class="skill-card"><div class="skill-icon" aria-hidden="true">✓</div><h3>Data quality, analytics &amp; reporting</h3><p>Schema and type standardisation · Required-field and business-rule checks · Duplicate detection · Rejected-record handling · PII removal · Power BI · DAX · Gold aggregates · Analytics-ready datasets · Reporting models</p></article>
               <article class="skill-card"><div class="skill-icon" aria-hidden="true">⌘</div><h3>Systems &amp; networking</h3><p>Linux · Windows · TCP/IP · DNS · DHCP</p></article>
               <article class="skill-card"><div class="skill-icon" aria-hidden="true">✦</div><h3>Professional skills</h3><p>Analytical thinking · Problem-solving · Troubleshooting · Attention to detail · Testing · Team collaboration · Communication · Oral communication · Information strategy · User support · Cognitive ability · Continuous learning</p></article>
             </div>
-            <p class="skills-note">Fabric and Azure SQL tools above are demonstrated in the linked project work. Data lake, data warehouse and lakehouse terms reflect foundational concepts listed on my resume.</p>
-            <aside class="platform-note"><strong>Azure and Fabric scope</strong><p>Several projects use Fabric Data Factory and Fabric Lakehouse, with OneLake and Delta tables. The AdventureWorks project documents an earlier Azure Data Factory, ADLS Gen2 and Databricks implementation; its Fabric migration is planned work and has not started. My AZ-900 and DP-900 certifications document my Azure cloud and data fundamentals. <a href="https://learn.microsoft.com/en-us/fabric/onelake/onelake-medallion-lakehouse-architecture" target="_blank" rel="noopener noreferrer">Fabric medallion architecture reference ↗</a></p></aside>
+            <p class="skills-note">Azure Data Factory, ADLS Gen2 and Databricks are demonstrated in the AdventureWorks project; Fabric tools appear in the other case studies. OneLake and data warehouse are listed as platform fundamentals.</p>
+            <aside class="platform-note"><strong>Azure and Fabric scope</strong><p>The Banking and E-commerce projects use Fabric Data Factory pipelines; SureLink uses Dataflow Gen2. Their Fabric Lakehouses store Delta tables in OneLake. AdventureWorks documents a separate Azure Data Factory, ADLS Gen2 and Databricks stack. My AZ-900 and DP-900 certifications document my Azure cloud and data fundamentals. <a href="https://learn.microsoft.com/en-us/fabric/onelake/onelake-medallion-lakehouse-architecture" target="_blank" rel="noopener noreferrer">Fabric medallion architecture reference ↗</a></p></aside>
           </div>
         </section>
 
@@ -168,7 +171,7 @@
               <div class="project-main">
                 <div class="project-meta"><span>01 / AZURE DATA ENGINEERING · ADVENTUREWORKS</span><span class="project-icon" aria-hidden="true">⇢</span></div>
                 <h3 id="adventureworks-project-title">AdventureWorks Azure-to-Fabric Migration Project</h3>
-                <p class="project-summary">A documented Azure data pipeline that extracts AdventureWorks2022 from local SQL Server through metadata-driven Azure Data Factory and a self-hosted Integration Runtime into ADLS Gen2. Azure Databricks, PySpark and Delta Lake transform Bronze data into validated Silver tables and Gold fact and dimension models. The Azure resources were removed after backup; the repository preserves the implementation and historical evidence. A Fabric migration is planned but has not started.</p>
+                <p class="project-summary">The historical implementation extracted AdventureWorks2022 from local SQL Server through metadata-driven Azure Data Factory and a self-hosted Integration Runtime into ADLS Gen2. Azure Databricks, PySpark and Delta Lake then transformed Bronze data into validated Silver tables and Gold fact and dimension models.</p>
                 <ul class="tag-list" aria-label="Technologies used"><li>SQL Server 2022</li><li>Azure Data Factory</li><li>Self-hosted Integration Runtime</li><li>ADLS Gen2</li><li>Azure Databricks</li><li>PySpark</li><li>Delta Lake</li><li>Spark SQL</li></ul>
                 <div class="project-links" aria-label="Project resources">
                   <a class="text-link" href="https://github.com/Lehlogonoloramphisa/Azure_Fabric_Migration_Project" target="_blank" rel="noopener noreferrer">Repository <span aria-hidden="true">↗</span></a>
@@ -182,7 +185,7 @@
                 <div class="result"><dt>173,106</dt><dd>rows in the recorded Silver baseline</dd></div>
                 <div class="result"><dt>5</dt><dd>documented Gold fact and dimension tables</dd></div>
               </dl>
-              <p class="project-evidence"><strong>Project status:</strong> results are historical README and test records. The repository documents watermark and audit-count limitations; its Fabric migration remains planned work.</p>
+              <p class="project-evidence"><strong>Project status:</strong> Fabric migration is planned and has not started. Results are historical records; the repository documents watermark and audit-count limitations.</p>
               <details class="project-details">
                 <summary>Explore the interactive architecture</summary>
                 <div class="architecture-diagram" data-architecture>
@@ -192,7 +195,7 @@
                     <li><button class="architecture-stage" type="button" aria-pressed="false" data-description="Azure Data Lake Storage Gen2 holds raw Parquet data in table-based Bronze folders before transformation."><span class="architecture-index">03 · BRONZE</span><strong>ADLS Gen2</strong><small>Raw Parquet files</small></button></li>
                     <li><button class="architecture-stage" type="button" aria-pressed="false" data-description="Azure Databricks and PySpark clean, deduplicate and validate the four source tables, then write managed Delta tables in Silver."><span class="architecture-index">04 · SILVER</span><strong>Databricks + Delta</strong><small>173,106 baseline rows</small></button></li>
                     <li><button class="architecture-stage" type="button" aria-pressed="false" data-description="The Gold model contains dim_date, dim_customer, dim_product, fact_sales_line and fact_sales_order for analytical queries."><span class="architecture-index">05 · GOLD</span><strong>Fact + dimensions</strong><small>5 documented tables</small></button></li>
-                    <li><button class="architecture-stage" type="button" aria-pressed="false" data-description="The project investigates Spark SQL query plans and analytical queries. A move to Microsoft Fabric is a future project phase and is not yet implemented."><span class="architecture-index">06 · ANALYTICS</span><strong>Spark SQL</strong><small>Query investigation</small></button></li>
+                    <li><button class="architecture-stage" type="button" aria-pressed="false" data-description="The project investigates Spark SQL execution plans, joins, aggregations, shuffle behaviour and analytical queries."><span class="architecture-index">06 · ANALYTICS</span><strong>Spark SQL</strong><small>Query investigation</small></button></li>
                   </ol>
                   <div class="architecture-readout"><span class="readout-label">Selected stage</span><p class="architecture-detail" aria-live="polite">AdventureWorks2022 runs on a local SQL Server 2022 instance; the initial project load covers Customer, SalesOrderHeader, SalesOrderDetail and Product.</p></div>
                 </div>
