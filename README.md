@@ -26,7 +26,7 @@ Then open `http://localhost:5173/`. `index.html` is the static-host entry point.
 
 The notebooks, SQL models, pipeline definitions and source documentation remain in the public project repositories linked from the site; this portfolio directory contains no local Python, SQL or notebook source to edit. The site links directly to those artifacts and accurately describes documented controls. The project claims below reflect their READMEs and saved notebook outputs; they are not production SLAs or independently rerun results.
 
-### AdventureWorks Azure-to-Fabric Migration Project
+### On-Premises SQL-Server to Azure Data Engineering Pipeline
 
 - Historical Azure implementation using local SQL Server 2022, metadata-driven Azure Data Factory, a Self-hosted Integration Runtime, ADLS Gen2, Azure Databricks, PySpark and Delta Lake.
 - The initial load covers four AdventureWorks tables with 173,106 rows; the documented Silver baseline also contains 173,106 rows.
@@ -34,7 +34,7 @@ The notebooks, SQL models, pipeline definitions and source documentation remain 
 - The repository preserves implementation files and historical test evidence. Fabric migration is planned and has not started; the project backlog says historical results are not current environment validation.
 - The README records known watermark limitations and a discrepancy between one Copy activity count and its audit count.
 
-### SureLink Short-Term Insurance Data Engineering
+### SureLink Insurance Data Engineering Project
 
 - Simulated South African insurance pipeline using Azure SQL Database, Python and pyodbc, Fabric Dataflow Gen2, PySpark, Delta Lake and Power BI.
 - The README records 78,296 rows across Customer, Vehicle, Policy and Claim, including 19,931 claim rows.
@@ -48,7 +48,7 @@ The notebooks, SQL models, pipeline definitions and source documentation remain 
 - The documented output has nine Silver tables and seven Gold analytical tables, with 8,213 fraud-labeled PaySim records (about 0.129%).
 - Documented checks include duplicate, required-field and referential-integrity checks; sensitive client birth-number data is removed before analytics.
 
-### E-commerce Data Engineering
+### Microsoft Fabric E-commerce Data Engineering Project
 
 - Microsoft Fabric project with two metadata-driven pipelines for CSV and JSON source files, PySpark transformations and Delta tables.
 - Saved notebook outputs retain 2,939 of 3,000 orders and route 61 invalid-reference orders to `orders_rejected`.
