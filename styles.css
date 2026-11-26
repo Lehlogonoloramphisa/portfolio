@@ -120,7 +120,7 @@ a:focus-visible, button:focus-visible { outline: 3px solid #315cf4; outline-offs
 .about-aside { display: flex; flex-direction: column; gap: 20px; padding-left: 27px; border-left: 1px solid var(--line); }
 .aside-item { display: flex; flex-direction: column; gap: 5px; }
 .aside-item > span, .entry-type { color: #5e6f8f; font-family: var(--mono); font-size: 10px; font-weight: 600; letter-spacing: .08em; }
-.aside-item strong { color: var(--ink); font-size: 13px; font-weight: 700; }
+.aside-item strong { color: var(--ink); font-size: 13px; font-weight: 700; overflow-wrap: anywhere; }
 .aside-item small { color: var(--muted); font-size: 13px; line-height: 1.55; }
 
 .skills-section, .experience-section { background: var(--paper-deep); }
@@ -145,6 +145,7 @@ a:focus-visible, button:focus-visible { outline: 3px solid #315cf4; outline-offs
 .project-icon { display: grid; width: 35px; height: 35px; flex: 0 0 auto; place-items: center; border: 1px solid #d8dff5; border-radius: 50%; background: #eff3ff; color: var(--blue); font-size: 20px; }
 .project-main h3 { margin: 13px 0 9px; color: var(--ink); font-size: clamp(19px, 2.25vw, 26px); font-weight: 600; letter-spacing: -.045em; line-height: 1.2; overflow-wrap: anywhere; }
 .project-summary { max-width: 690px; margin: 0; color: var(--ink-soft); font-size: 15px; line-height: 1.75; }
+.project-work-list { display: grid; gap: 7px; margin: 16px 0; padding-left: 18px; color: var(--ink-soft); font-size: 13px; line-height: 1.75; overflow-wrap: anywhere; }
 .tag-list { display: flex; flex-wrap: wrap; gap: 7px; margin: 17px 0; padding: 0; list-style: none; }
 .tag-list li { padding: 5px 9px; border: 1px solid #dfe3ed; border-radius: 3px; background: #f1f3f9; color: #53617a; font-size: 11px; line-height: 1.45; }
 .project-links { display: flex; flex-wrap: wrap; gap: 10px 20px; }
@@ -197,6 +198,7 @@ a:focus-visible, button:focus-visible { outline: 3px solid #315cf4; outline-offs
 .contact-panel { position: relative; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, .68fr); align-items: center; gap: 53px; overflow: hidden; padding: 49px 52px; background: var(--blue-deep); color: var(--white); }
 .contact-panel::after { position: absolute; top: -215px; right: -130px; width: 365px; height: 365px; border: 1px solid rgb(255 255 255 / 11%); border-radius: 50%; box-shadow: 0 0 0 40px rgb(255 255 255 / 4%), 0 0 0 80px rgb(255 255 255 / 2%); content: ""; pointer-events: none; }
 .contact-panel > div { position: relative; z-index: 1; min-width: 0; }
+.contact-actions a { overflow-wrap: anywhere; }
 .contact-panel .eyebrow { margin: 0 0 14px; color: #c6d9ff; }
 .contact-panel h2 { margin: 0; color: var(--white); font-size: clamp(34px, 4.4vw, 54px); font-weight: 500; letter-spacing: -.065em; line-height: 1.08; overflow-wrap: anywhere; }
 .contact-panel h2 em { color: var(--aqua); }
@@ -340,3 +342,4 @@ a:focus-visible, button:focus-visible { outline: 3px solid #315cf4; outline-offs
   .pipeline-arrow::after { left: 50%; transform: translate(-50%, -50%); opacity: .75; animation: none !important; }
   .pipeline-stage::after { opacity: .75; box-shadow: none; animation: none !important; }
 }
+
